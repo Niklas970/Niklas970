@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1010" viewBox="0 0 1040 1010" role="img" aria-label="Niklas970: Homelab, Automatisierung, Self-Hosting">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07142b"/><stop offset="0.6" stop-color="#061a2e"/><stop offset="1" stop-color="#062a35"/></linearGradient>
+    <radialGradient id="pgl" cx="0.85" cy="0" r="0.8"><stop offset="0" stop-color="#0b5cff" stop-opacity="0.35"/><stop offset="1" stop-color="#0b5cff" stop-opacity="0"/></radialGradient>
+    <pattern id="pgr" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#00e5ff" stroke-opacity="0.06"/></pattern>
+    <linearGradient id="pln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient>
+    <filter id="pgw" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4"/></filter>
+    <clipPath id="pcl"><rect x="1" y="1" width="1038" height="1008" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#pcl)"><rect width="1040" height="1010" fill="url(#pbg)"/><rect width="1040" height="1010" fill="url(#pgl)"/><rect width="1040" height="1010" fill="url(#pgr)"/></g>
+  <rect x="1" y="1" width="1038" height="1008" rx="24" fill="none" stroke="#17406a" stroke-width="2"/>
+  <svg x="20" y="20" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="Hi, ich bin Niklas - Homelab, Automatisierung, Self-Hosting">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07142b"/><stop offset="0.6" stop-color="#061a2e"/><stop offset="1" stop-color="#062a35"/></linearGradient>
+    <radialGradient id="gl" cx="0.85" cy="0" r="0.9"><stop offset="0" stop-color="#0b5cff" stop-opacity="0.45"/><stop offset="1" stop-color="#0b5cff" stop-opacity="0"/></radialGradient>
+    <pattern id="gr" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#00e5ff" stroke-opacity="0.06"/></pattern>
+    <filter id="blur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+    <clipPath id="r"><rect x="1" y="1" width="998" height="258" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#r)">
+    <rect width="1000" height="260" fill="url(#bg)"/>
+    <rect width="1000" height="260" fill="url(#gl)"/>
+    <rect width="1000" height="260" fill="url(#gr)"/>
+    <g stroke="#00e5ff" stroke-opacity="0.35" stroke-width="1.5" fill="none">
+      <path d="M700 70 L790 120 L880 60 L940 150 L850 200 L790 120 M700 70 L720 190 L850 200"/>
+    </g>
+    <g fill="#00e5ff">
+      <circle cx="700" cy="70" r="5"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="790" cy="120" r="7"><animate attributeName="opacity" values="1;0.4;1" dur="3.4s" repeatCount="indefinite"/></circle>
+      <circle cx="880" cy="60" r="5"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" repeatCount="indefinite"/></circle>
+      <circle cx="940" cy="150" r="6"><animate attributeName="opacity" values="1;0.4;1" dur="3.8s" repeatCount="indefinite"/></circle>
+      <circle cx="850" cy="200" r="5"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.1s" repeatCount="indefinite"/></circle>
+      <circle cx="720" cy="190" r="4"><animate attributeName="opacity" values="1;0.4;1" dur="2.9s" repeatCount="indefinite"/></circle>
+    </g>
+  </g>
+  <rect x="1" y="1" width="998" height="258" rx="20" fill="none" stroke="#17406a" stroke-width="2"/>
+  <text x="60" y="124" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="62" font-weight="700" fill="#00e5ff" opacity="0.55" filter="url(#blur)">Hi, ich bin Niklas</text>
+  <text x="60" y="124" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="62" font-weight="700" fill="#ffffff">Hi, ich bin Niklas</text>
+  <text x="62" y="172" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#7fe9ff">Homelab  |  Automatisierung  |  Self-Hosting</text>
+</svg>
+
+  <rect x="20" y="300" width="1000" height="52" rx="14" fill="#0a1626" fill-opacity="0.85" stroke="#123a5e" stroke-width="1.5"/>
+  <circle cx="48" cy="326" r="7" fill="#00e5ff" opacity="0.5" filter="url(#pgw)"/><circle cx="48" cy="326" r="4.5" fill="#00e5ff"/>
+  <text x="70" y="334" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#e7f3ff">Tech-Stack</text>
+  <rect x="50" y="349" width="920" height="2" fill="url(#pln)"/>
+  <rect x="221" y="376" width="110" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle cx="237" cy="395" r="3.5" fill="#00e5ff"/><text x="249" y="401" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">PROXMOX</text>
+  <rect x="343" y="376" width="100" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle cx="359" cy="395" r="3.5" fill="#00e5ff"/><text x="371" y="401" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">DOCKER</text>
+  <rect x="455" y="376" width="90" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle cx="471" cy="395" r="3.5" fill="#00e5ff"/><text x="483" y="401" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">LINUX</text>
+  <rect x="557" y="376" width="70" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle cx="573" cy="395" r="3.5" fill="#00e5ff"/><text x="585" y="401" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">N8N</text>
+  <rect x="639" y="376" width="180" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle cx="655" cy="395" r="3.5" fill="#00e5ff"/><text x="667" y="401" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">HOME ASSISTANT</text>
+  
+  <rect x="282" y="426" width="110" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle cx="298" cy="445" r="3.5" fill="#00e5ff"/><text x="310" y="451" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">GRAFANA</text>
+  <rect x="404" y="426" width="140" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle cx="420" cy="445" r="3.5" fill="#00e5ff"/><text x="432" y="451" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">CLOUDFLARE</text>
+  <rect x="556" y="426" width="90" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle cx="572" cy="445" r="3.5" fill="#00e5ff"/><text x="584" y="451" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">CISCO</text>
+  <rect x="658" y="426" width="100" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle cx="674" cy="445" r="3.5" fill="#00e5ff"/><text x="686" y="451" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">GITHUB</text>
+  
+  <rect x="20" y="496" width="1000" height="52" rx="14" fill="#0a1626" fill-opacity="0.85" stroke="#123a5e" stroke-width="1.5"/>
+  <circle cx="48" cy="522" r="7" fill="#00e5ff" opacity="0.5" filter="url(#pgw)"/><circle cx="48" cy="522" r="4.5" fill="#00e5ff"/>
+  <text x="70" y="530" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#e7f3ff">Was ich mache</text>
+  <rect x="50" y="545" width="920" height="2" fill="url(#pln)"/>
+  <svg x="20" y="570" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="Was ich mache">
+  <defs><linearGradient id="cb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a1626"/><stop offset="1" stop-color="#08101c"/></linearGradient><linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff" stop-opacity="0"/><stop offset="0.5" stop-color="#00e5ff"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient><filter id="gw" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter></defs>
+  <rect x="10" y="10" width="480" height="110" rx="16" fill="url(#cb)" stroke="#123a5e" stroke-width="1.5"/>
+  <rect x="40" y="11" width="420" height="2" fill="url(#top)"/>
+  <circle cx="60" cy="65" r="24" fill="#00e5ff" opacity="0.35" filter="url(#gw)"/>
+  <circle cx="60" cy="65" r="24" fill="#0a2236" stroke="#00e5ff" stroke-opacity="0.6"/>
+  <g transform="translate(48 53) scale(1)" fill="none" stroke="#00e5ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></g>
+  <text x="102" y="60" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#e7f3ff">Homelab</text>
+  <text x="102" y="90" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#8fb3c9">Proxmox, LXC, DNS</text>
+  <text x="470" y="105" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#00e5ff" text-anchor="end">3 Nodes</text>
+  <rect x="510" y="10" width="480" height="110" rx="16" fill="url(#cb)" stroke="#123a5e" stroke-width="1.5"/>
+  <rect x="540" y="11" width="420" height="2" fill="url(#top)"/>
+  <circle cx="560" cy="65" r="24" fill="#00e5ff" opacity="0.35" filter="url(#gw)"/>
+  <circle cx="560" cy="65" r="24" fill="#0a2236" stroke="#00e5ff" stroke-opacity="0.6"/>
+  <g transform="translate(548 53) scale(1)" fill="none" stroke="#00e5ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><path d="M7 6h10M6 8l5 8M18 8l-5 8"/></g>
+  <text x="602" y="60" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#e7f3ff">Automatisierung</text>
+  <text x="602" y="90" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#8fb3c9">n8n, APIs</text>
+  <text x="970" y="105" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#00e5ff" text-anchor="end">24/7</text>
+  <rect x="10" y="135" width="480" height="110" rx="16" fill="url(#cb)" stroke="#123a5e" stroke-width="1.5"/>
+  <rect x="40" y="136" width="420" height="2" fill="url(#top)"/>
+  <circle cx="60" cy="190" r="24" fill="#00e5ff" opacity="0.35" filter="url(#gw)"/>
+  <circle cx="60" cy="190" r="24" fill="#0a2236" stroke="#00e5ff" stroke-opacity="0.6"/>
+  <g transform="translate(48 178) scale(1)" fill="none" stroke="#00e5ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></g>
+  <text x="102" y="185" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#e7f3ff">Smart Home</text>
+  <text x="102" y="215" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#8fb3c9">Home Assistant</text>
+  <text x="470" y="230" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#00e5ff" text-anchor="end">lokal</text>
+  <rect x="510" y="135" width="480" height="110" rx="16" fill="url(#cb)" stroke="#123a5e" stroke-width="1.5"/>
+  <rect x="540" y="136" width="420" height="2" fill="url(#top)"/>
+  <circle cx="560" cy="190" r="24" fill="#00e5ff" opacity="0.35" filter="url(#gw)"/>
+  <circle cx="560" cy="190" r="24" fill="#0a2236" stroke="#00e5ff" stroke-opacity="0.6"/>
+  <g transform="translate(548 178) scale(1)" fill="none" stroke="#00e5ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4"/><path d="M4 20h16"/><path d="M8 15l4-5 3 3 5-7"/></g>
+  <text x="602" y="185" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#e7f3ff">Monitoring</text>
+  <text x="602" y="215" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#8fb3c9">Grafana, Uptime Kuma</text>
+  <text x="970" y="230" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#00e5ff" text-anchor="end">Alerts</text>
+</svg>
+
+  <rect x="20" y="850" width="1000" height="52" rx="14" fill="#0a1626" fill-opacity="0.85" stroke="#123a5e" stroke-width="1.5"/>
+  <circle cx="48" cy="876" r="7" fill="#00e5ff" opacity="0.5" filter="url(#pgw)"/><circle cx="48" cy="876" r="4.5" fill="#00e5ff"/>
+  <text x="70" y="884" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#e7f3ff">GitHub</text>
+  <rect x="50" y="899" width="920" height="2" fill="url(#pln)"/>
+  <rect x="340" y="926" width="360" height="46" rx="12" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/>
+  <circle cx="372" cy="949" r="4" fill="#00e5ff"/><text x="520" y="956" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="700" fill="#00e5ff" text-anchor="middle">github.com/Niklas970</text>
+</svg>
