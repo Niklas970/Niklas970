@@ -44,7 +44,6 @@
   <circle class="pl" cx="48" cy="326" r="7" fill="#00e5ff" opacity="0.5" filter="url(#pgw)"/><circle cx="48" cy="326" r="4.5" fill="#00e5ff"/>
   <text x="70" y="334" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#e7f3ff">Tech-Stack</text>
   <rect x="50" y="349" width="920" height="2" fill="url(#pln)"/>
-  <svg x="50" y="347" width="920" height="6" overflow="hidden"><rect class="hs" x="0" y="2" width="160" height="2" fill="#ffffff" opacity=".8"/></svg>
   <rect x="277" y="376" width="110" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle class="cd" style="animation-delay:0.69s" cx="293" cy="395" r="3.5" fill="#00e5ff"/><text x="305" y="401" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">PROXMOX</text>
   <rect x="399" y="376" width="90" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle class="cd" style="animation-delay:1.00s" cx="415" cy="395" r="3.5" fill="#00e5ff"/><text x="427" y="401" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">LINUX</text>
   <rect x="501" y="376" width="70" height="38" rx="10" fill="#0c2238" stroke="#123a5e" stroke-width="1.5"/><circle class="cd" style="animation-delay:1.25s" cx="517" cy="395" r="3.5" fill="#00e5ff"/><text x="529" y="401" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#00e5ff">N8N</text>
@@ -58,7 +57,6 @@
   <circle class="pl" cx="48" cy="522" r="7" fill="#00e5ff" opacity="0.5" filter="url(#pgw)"/><circle cx="48" cy="522" r="4.5" fill="#00e5ff"/>
   <text x="70" y="530" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#e7f3ff">Was ich mache</text>
   <rect x="50" y="545" width="920" height="2" fill="url(#pln)"/>
-  <svg x="50" y="543" width="920" height="6" overflow="hidden"><rect class="hs" x="0" y="2" width="160" height="2" fill="#ffffff" opacity=".8"/></svg>
   <svg x="20" y="570" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="Projekte">
 <defs><linearGradient id="cb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a1626"/><stop offset="1" stop-color="#08101c"/></linearGradient><linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff" stop-opacity="0"/><stop offset="0.5" stop-color="#00e5ff"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient><filter id="gw" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter></defs>
 <style>@keyframes pulse{0%,100%{opacity:.25}50%{opacity:.6}}@keyframes sweep{from{transform:translateX(-140px)}to{transform:translateX(480px)}}.gl{animation:pulse 3s ease-in-out infinite}.sw{animation:sweep 5s linear infinite}</style>
