@@ -6,8 +6,8 @@
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=Niklas970&theme=transparent&background=0A1626&border=123A5E&ring=00E5FF&fire=00E5FF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=00E5FF&sideLabels=8FB3C9&dates=8FB3C9&stroke=123A5E&border_radius=16" alt="Contributions und Streak" height="200" />
-<img src="./profile.svg" alt="Profil und Contributions" height="200" />
+<img src="https://streak-stats.demolab.com/?user=Niklas970&theme=transparent&background=0A1626&border=123A5E&ring=00E5FF&fire=00E5FF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=00E5FF&sideLabels=8FB3C9&dates=8FB3C9&stroke=123A5E&border_radius=16" alt="Contributions und Streak" width="49%" />
+<img src="./profile.svg" alt="Profil und Contributions" width="49%" />
 <br/>
 <img src="./stats.svg" alt="Stats" width="49%" />
 <img src="./hours.svg" alt="Commits nach Uhrzeit" width="49%" />
