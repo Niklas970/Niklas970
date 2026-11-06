@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="230" viewBox="0 0 520 230" role="img" aria-label="Meistgenutzte Sprachen">
+<rect x="1" y="1" width="518" height="228" rx="16" fill="#0a1626" stroke="#123a5e" stroke-width="1.5"/>
+<text x="28" y="48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#00e5ff">Meistgenutzte Sprachen</text>
+<text x="28" y="120" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#8fb3c9">Daten werden beim ersten Lauf berechnet</text>
+</svg>
