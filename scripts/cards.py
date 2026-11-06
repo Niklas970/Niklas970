@@ -23,10 +23,24 @@ def graphql(query):
     return req("https://api.github.com/graphql", json.dumps({"query": query}).encode())["data"]
 
 
-def card(title, body):
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{title}">'
-            f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="16" fill="#0a1626" stroke="#123a5e" stroke-width="1.5"/>'
+def card(title, body, w=None, h=None):
+    w, h = w or W, h or H
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{title}">'
+            f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="16" fill="#0a1626" stroke="#123a5e" stroke-width="1.5"/>'
+            f'<defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff" stop-opacity="0"/><stop offset=".5" stop-color="#00e5ff"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient>'
+            f'<clipPath id="tc"><rect x="16" y="1" width="{w-32}" height="3"/></clipPath></defs>' + STYLE.replace("__W__", str(w)) +
+            f'<g clip-path="url(#tc)"><rect class="sw" x="0" y="1" width="120" height="2" fill="url(#sg)"/></g>'
             f'<text x="28" y="44" {F} font-size="21" font-weight="700" fill="#00e5ff">{title}</text>{body}</svg>')
+
+
+STYLE = ('<style>@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}'
+         '@keyframes fadein{from{opacity:0}to{opacity:1}}'
+         '@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}'
+         '@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}'
+         '@keyframes sweep{from{transform:translateX(-120px)}to{transform:translateX(__W__px)}}'
+         '.g{transform-box:fill-box;transform-origin:bottom;animation:grow .9s cubic-bezier(.2,.8,.2,1) both}'
+         '.dot{animation:pulse 2.4s ease-in-out infinite}'
+         '.sw{animation:sweep 4.5s linear infinite}</style>')
 
 
 def collect():
@@ -65,10 +79,10 @@ def langs_card(d):
         out.append(f'<text x="28" y="120" {F} font-size="16" fill="#8fb3c9">Noch keine Daten</text>')
     for i, (lang, n) in enumerate(items):
         w = 464 * n / total
-        out.append(f'<rect x="{x:.1f}" y="62" width="{max(w,2):.1f}" height="10" fill="{COLORS[i]}"/>')
+        out.append(f'<rect x="{x:.1f}" y="62" width="{max(w,2):.1f}" height="10" fill="{COLORS[i]}" style="animation:fadein .6s {i*0.15:.2f}s both"/>')
         x += w
         cx, cy = 28 + (i % 2) * 232, 108 + (i // 2) * 34
-        out.append(f'<circle cx="{cx+6}" cy="{cy}" r="6" fill="{COLORS[i]}"/><text x="{cx+20}" y="{cy+5}" {F} font-size="16" fill="#e7f3ff">{lang} {100*n/total:.1f}%</text>')
+        out.append(f'<circle class="dot" style="animation-delay:{i*0.3:.1f}s" cx="{cx+6}" cy="{cy}" r="6" fill="{COLORS[i]}"/><text x="{cx+20}" y="{cy+5}" {F} font-size="16" fill="#e7f3ff">{lang} {100*n/total:.1f}%</text>')
     return card("Meistgenutzte Sprachen", "".join(out))
 
 
@@ -77,7 +91,7 @@ def hours_card(d):
     bw = 464 / 24
     for h, n in enumerate(hs):
         bh = 110 * n / mx
-        out.append(f'<rect x="{28+h*bw+2:.1f}" y="{180-bh:.1f}" width="{bw-4:.1f}" height="{max(bh,2):.1f}" rx="3" fill="#00e5ff" opacity="{0.35+0.65*n/mx:.2f}"/>')
+        out.append(f'<rect class="g" style="animation-delay:{h*0.04:.2f}s" x="{28+h*bw+2:.1f}" y="{180-bh:.1f}" width="{bw-4:.1f}" height="{max(bh,2):.1f}" rx="3" fill="#00e5ff" opacity="{0.35+0.65*n/mx:.2f}"/>')
     for h in (0, 6, 12, 18, 23):
         out.append(f'<text x="{28+h*bw+bw/2:.1f}" y="202" {M} font-size="12" fill="#8fb3c9" text-anchor="middle">{h:02d}</text>')
     out.append(f'<text x="492" y="44" {F} font-size="13" fill="#8fb3c9" text-anchor="end">Uhrzeit MEZ/MESZ</text>')
@@ -85,20 +99,25 @@ def hours_card(d):
 
 
 def profile_card(d):
+    # Gleiche Maße wie die Streak-Karte (495x195), damit beide Kacheln gleich hoch sind
+    pw, ph = 495, 195
     u, out = d["user"], []
-    facts = [("Contributions (12 Mon.)", d["total"]), ("Öffentliche Repos", len(d["repos"])),
-             ("Follower", u["followers"])]
+    facts = [("Contributions (12 Mon.)", d["total"]), ("Öffentliche Repos", len(d["repos"])), ("Follower", u["followers"])]
     for i, (k, v) in enumerate(facts):
-        out.append(f'<text x="28" y="{74+i*38}" {F} font-size="13" fill="#8fb3c9">{k}</text><text x="28" y="{92+i*38}" {M} font-size="20" font-weight="700" fill="#e7f3ff">{v}</text>')
+        out.append(f'<text x="28" y="{76+i*38}" {F} font-size="13" fill="#8fb3c9">{k}</text><text x="28" y="{94+i*38}" {M} font-size="20" font-weight="700" fill="#e7f3ff">{v}</text>')
     wk = d["weeks"] or [0]
     mx, n = max(wk) or 1, len(wk)
-    x0, x1, yb, ht = 250, 492, 195, 120
+    x0, x1, yb, ht = 235, 467, 170, 95
     pts = [(x0 + (x1 - x0) * i / max(n - 1, 1), yb - ht * v / mx) for i, v in enumerate(wk)]
     line = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
-    out.append(f'<defs><linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00e5ff" stop-opacity="0.45"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient></defs>')
-    out.append(f'<polygon points="{x0},{yb} {line} {x1},{yb}" fill="url(#ar)"/><polyline points="{line}" fill="none" stroke="#00e5ff" stroke-width="2.5" stroke-linejoin="round"/>')
-    out.append(f'<text x="492" y="44" {F} font-size="13" fill="#8fb3c9" text-anchor="end">letztes Jahr</text>')
-    return card(f"{USER}", "".join(out))
+    out.append('<defs><linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00e5ff" stop-opacity="0.45"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient></defs>')
+    out.append(f'<polygon points="{x0},{yb} {line} {x1},{yb}" fill="url(#ar)" style="animation:fadein 1.5s .8s both"/>'
+               f'<polyline points="{line}" pathLength="1" fill="none" stroke="#00e5ff" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="1" style="animation:draw 2s ease-out both"/>')
+    path = "M" + " L".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+    out.append(f'<circle r="4.5" fill="#fff"><animateMotion dur="7s" begin="2s" repeatCount="indefinite" path="{path}"/></circle>'
+               f'<circle r="9" fill="#00e5ff" opacity=".3"><animateMotion dur="7s" begin="2s" repeatCount="indefinite" path="{path}"/></circle>')
+    out.append(f'<text x="467" y="40" {F} font-size="13" fill="#8fb3c9" text-anchor="end">letztes Jahr</text>')
+    return card(f"{USER}", "".join(out), pw, ph)
 
 
 def stats_card(d):
@@ -109,7 +128,7 @@ def stats_card(d):
     out = []
     for i, (k, v) in enumerate(rows):
         y = 84 + i * 26
-        out.append(f'<circle cx="34" cy="{y-5}" r="4" fill="#00e5ff"/><text x="48" y="{y}" {F} font-size="16" fill="#8fb3c9">{k}</text><text x="492" y="{y}" {M} font-size="17" font-weight="700" fill="#e7f3ff" text-anchor="end">{v}</text>')
+        out.append(f'<circle class="dot" style="animation-delay:{i*0.35:.2f}s" cx="34" cy="{y-5}" r="4" fill="#00e5ff"/><text x="48" y="{y}" {F} font-size="16" fill="#8fb3c9">{k}</text><text x="492" y="{y}" {M} font-size="17" font-weight="700" fill="#e7f3ff" text-anchor="end">{v}</text>')
     return card("Stats", "".join(out))
 
 
