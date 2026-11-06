@@ -2,11 +2,9 @@
 
 <img src="./banner.svg" alt="Niklas - Homelab, Automatisierung, Self-Hosting" width="100%" />
 
-![Profile Views](https://komarev.com/ghpvc/?username=Niklas970&style=flat-square&color=00b8d9&labelColor=1b2a3a)
-
 </div>
 
-## 🧰 Tech-Stack
+<img src="./h-stack.svg" alt="Tech-Stack" width="100%" />
 
 <div align="center">
 
@@ -22,7 +20,7 @@
 
 </div>
 
-## 🛠️ Was ich mache
+<img src="./h-was.svg" alt="Was ich mache" width="100%" />
 
 <div align="center">
 
@@ -30,7 +28,7 @@
 
 </div>
 
-## 📊 GitHub
+<img src="./h-github.svg" alt="GitHub" width="100%" />
 
 <div align="center">
 
