@@ -7,5 +7,6 @@
 <div align="center">
 
 <img src="https://streak-stats.demolab.com/?user=Niklas970&theme=transparent&background=0A1626&border=123A5E&ring=00E5FF&fire=00E5FF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=00E5FF&sideLabels=8FB3C9&dates=8FB3C9&stroke=123A5E&border_radius=16" alt="Contributions und Streak" height="170" />
+<img src="./langs.svg" alt="Meistgenutzte Sprachen" height="170" />
 
 </div>
