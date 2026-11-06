@@ -1,11 +1,11 @@
-name: Sprachen-Karte
+name: Profil-Karten
 on:
   schedule:
     - cron: "0 4 * * *"
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["scripts/langs.py"]
+    paths: ["scripts/cards.py"]
 permissions:
   contents: write
 jobs:
@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python scripts/langs.py
+      - run: python scripts/cards.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add langs.svg
-          git diff --cached --quiet || git commit -m "Sprachen-Karte aktualisieren"
+          git add *.svg
+          git diff --cached --quiet || git commit -m "Profil-Karten aktualisieren"
           git push
