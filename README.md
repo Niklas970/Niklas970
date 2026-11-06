@@ -1,16 +1,14 @@
 <div align="center">
 
-# Hi, ich bin Niklas 👋
-
-**Homelab-Tüftler · Automatisierung & Self-Hosting**
+<img src="./banner.svg" alt="Niklas - Homelab-Tueftler" width="100%" />
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Niklas970&style=flat-square&color=0ea5e9)
 
 </div>
 
----
-
 ## 🧰 Tech-Stack
+
+<div align="center">
 
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -22,7 +20,15 @@
 ![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
----
+</div>
+
+## 🛠️ Was ich mache
+
+<div align="center">
+
+<img src="./cards.svg" alt="Homelab, Automatisierung, Smart Home, Monitoring" width="100%" />
+
+</div>
 
 ## 📊 GitHub
 
