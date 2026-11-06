@@ -29,7 +29,6 @@
 <div align="center">
 
 ![Followers](https://img.shields.io/github/followers/Niklas970?style=for-the-badge&logo=github&color=0ea5e9)
-![Last Commit](https://img.shields.io/github/last-commit/Niklas970/Feuerwehr-Master?style=for-the-badge&color=0ea5e9)
-![Stars](https://img.shields.io/github/stars/Niklas970/Feuerwehr-Master?style=for-the-badge&color=0ea5e9)
+![Last Commit](https://img.shields.io/github/last-commit/Niklas970/Niklas970?style=for-the-badge&color=0ea5e9)
 
 </div>
