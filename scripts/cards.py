@@ -23,9 +23,10 @@ def graphql(query):
     return req("https://api.github.com/graphql", json.dumps({"query": query}).encode())["data"]
 
 
-def card(title, body):
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{title}">'
-            f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="16" fill="#0a1626" stroke="#123a5e" stroke-width="1.5"/>'
+def card(title, body, w=None, h=None):
+    w, h = w or W, h or H
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{title}">'
+            f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="16" fill="#0a1626" stroke="#123a5e" stroke-width="1.5"/>'
             f'<text x="28" y="44" {F} font-size="21" font-weight="700" fill="#00e5ff">{title}</text>{body}</svg>')
 
 
@@ -85,20 +86,21 @@ def hours_card(d):
 
 
 def profile_card(d):
+    # Gleiche Maße wie die Streak-Karte (495x195), damit beide Kacheln gleich hoch sind
+    pw, ph = 495, 195
     u, out = d["user"], []
-    facts = [("Contributions (12 Mon.)", d["total"]), ("Öffentliche Repos", len(d["repos"])),
-             ("Follower", u["followers"])]
+    facts = [("Contributions (12 Mon.)", d["total"]), ("Öffentliche Repos", len(d["repos"])), ("Follower", u["followers"])]
     for i, (k, v) in enumerate(facts):
-        out.append(f'<text x="28" y="{74+i*38}" {F} font-size="13" fill="#8fb3c9">{k}</text><text x="28" y="{92+i*38}" {M} font-size="20" font-weight="700" fill="#e7f3ff">{v}</text>')
+        out.append(f'<text x="28" y="{76+i*38}" {F} font-size="13" fill="#8fb3c9">{k}</text><text x="28" y="{94+i*38}" {M} font-size="20" font-weight="700" fill="#e7f3ff">{v}</text>')
     wk = d["weeks"] or [0]
     mx, n = max(wk) or 1, len(wk)
-    x0, x1, yb, ht = 250, 492, 195, 120
+    x0, x1, yb, ht = 235, 467, 170, 95
     pts = [(x0 + (x1 - x0) * i / max(n - 1, 1), yb - ht * v / mx) for i, v in enumerate(wk)]
     line = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
-    out.append(f'<defs><linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00e5ff" stop-opacity="0.45"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient></defs>')
+    out.append('<defs><linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00e5ff" stop-opacity="0.45"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient></defs>')
     out.append(f'<polygon points="{x0},{yb} {line} {x1},{yb}" fill="url(#ar)"/><polyline points="{line}" fill="none" stroke="#00e5ff" stroke-width="2.5" stroke-linejoin="round"/>')
-    out.append(f'<text x="492" y="44" {F} font-size="13" fill="#8fb3c9" text-anchor="end">letztes Jahr</text>')
-    return card(f"{USER}", "".join(out))
+    out.append(f'<text x="467" y="40" {F} font-size="13" fill="#8fb3c9" text-anchor="end">letztes Jahr</text>')
+    return card(f"{USER}", "".join(out), pw, ph)
 
 
 def stats_card(d):
