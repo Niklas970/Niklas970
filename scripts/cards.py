@@ -1,5 +1,5 @@
 """Erzeugt Neon-Karten (SVG) aus GitHub-Daten. Nur Standardbibliothek."""
-import json, math, os, sys, urllib.request
+import json, os, sys, urllib.request
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -72,20 +72,6 @@ def langs_card(d):
     return card("Meistgenutzte Sprachen", "".join(out))
 
 
-def donut_card(d):
-    items = sorted(d["by_repo"].items(), key=lambda kv: -kv[1])[:6]
-    total = sum(n for _, n in items) or 1
-    r, circ, off, out = 62, 2 * math.pi * 62, 0.0, []
-    out.append('<circle cx="140" cy="140" r="62" fill="none" stroke="#0c2238" stroke-width="26"/>')
-    for i, (lang, n) in enumerate(items):
-        ln = circ * n / total
-        out.append(f'<circle cx="140" cy="140" r="{r}" fill="none" stroke="{COLORS[i]}" stroke-width="26" stroke-dasharray="{ln:.2f} {circ-ln:.2f}" stroke-dashoffset="{-off:.2f}" transform="rotate(-90 140 140)"/>')
-        off += ln
-        out.append(f'<circle cx="270" cy="{82+i*24}" r="6" fill="{COLORS[i]}"/><text x="284" y="{87+i*24}" {F} font-size="15" fill="#e7f3ff">{lang} ({n})</text>')
-    out.append(f'<text x="140" y="148" {M} font-size="22" font-weight="700" fill="#fff" text-anchor="middle">{sum(d["by_repo"].values())}</text>')
-    return card("Sprachen nach Repo", "".join(out))
-
-
 def hours_card(d):
     hs, mx, out = d["hours"], max(d["hours"]) or 1, []
     bw = 464 / 24
@@ -101,7 +87,7 @@ def hours_card(d):
 def profile_card(d):
     u, out = d["user"], []
     facts = [("Contributions (12 Mon.)", d["total"]), ("Öffentliche Repos", len(d["repos"])),
-             ("Follower", u["followers"]), ("Dabei seit", u["created_at"][:4])]
+             ("Follower", u["followers"])]
     for i, (k, v) in enumerate(facts):
         out.append(f'<text x="28" y="{74+i*38}" {F} font-size="13" fill="#8fb3c9">{k}</text><text x="28" y="{92+i*38}" {M} font-size="20" font-weight="700" fill="#e7f3ff">{v}</text>')
     wk = d["weeks"] or [0]
@@ -133,5 +119,5 @@ if __name__ == "__main__":
     except Exception as e:
         print("Fehler:", e)
         sys.exit(1)
-    for name, fn in [("profile", profile_card), ("stats", stats_card), ("hours", hours_card), ("donut", donut_card), ("langs", langs_card)]:
+    for name, fn in [("profile", profile_card), ("stats", stats_card), ("hours", hours_card), ("langs", langs_card)]:
         open(f"{name}.svg", "w").write(fn(d))

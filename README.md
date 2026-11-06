@@ -11,7 +11,6 @@
 <br/>
 <img src="./stats.svg" alt="Stats" width="49%" />
 <img src="./hours.svg" alt="Commits nach Uhrzeit" width="49%" />
-<img src="./donut.svg" alt="Sprachen nach Repo" width="49%" />
 <img src="./langs.svg" alt="Meistgenutzte Sprachen" width="49%" />
 
 </div>
