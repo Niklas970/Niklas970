@@ -119,7 +119,7 @@ def stats_card(d):
     u = d["user"]
     stars = sum(r["stargazers_count"] for r in d["repos"])
     rows = [("Sterne", stars), ("Öffentliche Repos", len(d["repos"])), ("Follower", u["followers"]),
-            ("Folge ich", u["following"]), ("Commits (Stichprobe)", sum(d["hours"])), ("Contributions (12 Mon.)", d["total"])]
+            ("Folge ich", u["following"]), ("Contributions (12 Mon.)", d["total"])]
     out = []
     for i, (k, v) in enumerate(rows):
         y = 84 + i * 26
