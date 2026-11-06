@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="Was ich mache">
+  <rect x="10" y="10" width="480" height="110" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <rect x="10" y="24" width="5" height="82" rx="2.5" fill="#58a6ff"/>
+  <text x="38" y="52" font-family="monospace" font-size="22" font-weight="bold" fill="#58a6ff">Homelab</text>
+  <text x="38" y="82" font-family="monospace" font-size="16" fill="#e6edf3">Proxmox-Cluster, LXC &amp; VMs</text>
+  <text x="38" y="104" font-family="monospace" font-size="16" fill="#8b949e">Reverse Proxy, DNS, SSO</text>
+  <rect x="510" y="10" width="480" height="110" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <rect x="510" y="24" width="5" height="82" rx="2.5" fill="#3fb950"/>
+  <text x="538" y="52" font-family="monospace" font-size="22" font-weight="bold" fill="#3fb950">Automatisierung</text>
+  <text x="538" y="82" font-family="monospace" font-size="16" fill="#e6edf3">n8n-Workflows</text>
+  <text x="538" y="104" font-family="monospace" font-size="16" fill="#8b949e">Benachrichtigungen &amp; APIs</text>
+  <rect x="10" y="135" width="480" height="110" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <rect x="10" y="149" width="5" height="82" rx="2.5" fill="#d2a8ff"/>
+  <text x="38" y="177" font-family="monospace" font-size="22" font-weight="bold" fill="#d2a8ff">Smart Home</text>
+  <text x="38" y="207" font-family="monospace" font-size="16" fill="#e6edf3">Home Assistant</text>
+  <text x="38" y="229" font-family="monospace" font-size="16" fill="#8b949e">Automationen fuer den Alltag</text>
+  <rect x="510" y="135" width="480" height="110" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <rect x="510" y="149" width="5" height="82" rx="2.5" fill="#f0883e"/>
+  <text x="538" y="177" font-family="monospace" font-size="22" font-weight="bold" fill="#f0883e">Monitoring</text>
+  <text x="538" y="207" font-family="monospace" font-size="16" fill="#e6edf3">Grafana &amp; InfluxDB</text>
+  <text x="538" y="229" font-family="monospace" font-size="16" fill="#8b949e">Uptime Kuma, Alerts</text>
+</svg>
