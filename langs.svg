@@ -1,5 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="230" viewBox="0 0 520 230" role="img" aria-label="Meistgenutzte Sprachen">
 <rect x="1" y="1" width="518" height="228" rx="16" fill="#0a1626" stroke="#123a5e" stroke-width="1.5"/>
 <text x="28" y="48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#00e5ff">Meistgenutzte Sprachen</text>
-<text x="28" y="120" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#8fb3c9">Daten werden beim ersten Lauf berechnet</text>
+<rect x="28.0" y="68" width="417.7" height="10" fill="#00e5ff"/>
+<circle cx="34" cy="112" r="6" fill="#00e5ff"/>
+<text x="48" y="117" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#e7f3ff">Rust 90.0%</text>
+<rect x="445.7" y="68" width="16.7" height="10" fill="#0b8bff"/>
+<circle cx="266" cy="112" r="6" fill="#0b8bff"/>
+<text x="280" y="117" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#e7f3ff">HTML 3.6%</text>
+<rect x="462.4" y="68" width="14.7" height="10" fill="#7fe9ff"/>
+<circle cx="34" cy="146" r="6" fill="#7fe9ff"/>
+<text x="48" y="151" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#e7f3ff">TypeScript 3.2%</text>
+<rect x="477.0" y="68" width="10.4" height="10" fill="#6a5cff"/>
+<circle cx="266" cy="146" r="6" fill="#6a5cff"/>
+<text x="280" y="151" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#e7f3ff">JavaScript 2.2%</text>
+<rect x="487.5" y="68" width="2.3" height="10" fill="#00b8d9"/>
+<circle cx="34" cy="180" r="6" fill="#00b8d9"/>
+<text x="48" y="185" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#e7f3ff">PowerShell 0.5%</text>
+<rect x="489.8" y="68" width="2.2" height="10" fill="#8fb3c9"/>
+<circle cx="266" cy="180" r="6" fill="#8fb3c9"/>
+<text x="280" y="185" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#e7f3ff">NSIS 0.5%</text>
 </svg>
