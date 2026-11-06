@@ -1,23 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-label="Terminal banner: Niklas, Homelab-Tueftler">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="Hi, ich bin Niklas - Homelab, Automatisierung, Self-Hosting">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#161b22"/></linearGradient>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#3fb950"/></linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2a66"/><stop offset="0.55" stop-color="#0e7490"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+    <clipPath id="r"><rect width="1000" height="260" rx="20"/></clipPath>
   </defs>
-  <rect x="1" y="1" width="998" height="318" rx="14" fill="url(#bg)" stroke="#30363d" stroke-width="2"/>
-  <path d="M1 15a14 14 0 0 1 14-14h970a14 14 0 0 1 14 14v28H1z" fill="#21262d"/>
-  <circle cx="28" cy="22" r="7" fill="#ff5f56"/><circle cx="52" cy="22" r="7" fill="#ffbd2e"/><circle cx="76" cy="22" r="7" fill="#27c93f"/>
-  <text x="500.0" y="27" fill="#8b949e" font-family="monospace" font-size="14" text-anchor="middle">niklas@homelab: ~</text>
-  <rect x="1" y="43" width="998" height="3" fill="url(#bar)"/>
-  <clipPath id="c0"><rect x="36" y="71" width="0" height="34"><animate attributeName="width" begin="0.5s" dur="1.08s" values="0.0;12.0;24.0;36.0;48.0;60.0;72.0;84.0;96.0;108.0;120.0;132.0;144.0;156.0;168.0;180.0;192.0;204.0;216.0;228.0;240.0;252.0;264.0;276.0;288.0" calcMode="discrete" fill="freeze"/></rect></clipPath>
-  <text clip-path="url(#c0)" x="36" y="95" font-family="monospace" font-size="20" xml:space="preserve"><tspan fill="#3fb950">niklas@homelab:~$ </tspan><tspan fill="#e6edf3">whoami</tspan></text>
-  <clipPath id="c1"><rect x="36" y="109" width="0" height="34"><animate attributeName="width" begin="2.0s" dur="1.12s" values="0.0;12.0;24.0;36.0;48.0;60.0;72.0;84.0;96.0;108.0;120.0;132.0;144.0;156.0;168.0;180.0;192.0;204.0;216.0;228.0;240.0;252.0;264.0;276.0;288.0;300.0" calcMode="discrete" fill="freeze"/></rect></clipPath>
-  <text clip-path="url(#c1)" x="36" y="133" font-family="monospace" font-size="20" fill="#58a6ff" font-weight="bold" xml:space="preserve">Niklas | Homelab-Tueftler</text>
-  <clipPath id="c2"><rect x="36" y="147" width="0" height="34"><animate attributeName="width" begin="4.0s" dur="1.40s" values="0.0;12.0;24.0;36.0;48.0;60.0;72.0;84.0;96.0;108.0;120.0;132.0;144.0;156.0;168.0;180.0;192.0;204.0;216.0;228.0;240.0;252.0;264.0;276.0;288.0;300.0;312.0;324.0;336.0;348.0;360.0;372.0" calcMode="discrete" fill="freeze"/></rect></clipPath>
-  <text clip-path="url(#c2)" x="36" y="171" font-family="monospace" font-size="20" xml:space="preserve"><tspan fill="#3fb950">niklas@homelab:~$ </tspan><tspan fill="#e6edf3">cat stack.txt</tspan></text>
-  <clipPath id="c3"><rect x="36" y="185" width="0" height="34"><animate attributeName="width" begin="5.6s" dur="2.02s" values="0.0;12.0;24.0;36.0;48.0;60.0;72.0;84.0;96.0;108.0;120.0;132.0;144.0;156.0;168.0;180.0;192.0;204.0;216.0;228.0;240.0;252.0;264.0;276.0;288.0;300.0;312.0;324.0;336.0;348.0;360.0;372.0;384.0;396.0;408.0;420.0;432.0;444.0;456.0;468.0;480.0;492.0;504.0;516.0;528.0;540.0" calcMode="discrete" fill="freeze"/></rect></clipPath>
-  <text clip-path="url(#c3)" x="36" y="209" font-family="monospace" font-size="20" fill="#8b949e" font-weight="normal" xml:space="preserve">proxmox  docker  n8n  home-assistant  grafana</text>
-  <clipPath id="c4"><rect x="36" y="223" width="0" height="34"><animate attributeName="width" begin="8.2s" dur="1.08s" values="0.0;12.0;24.0;36.0;48.0;60.0;72.0;84.0;96.0;108.0;120.0;132.0;144.0;156.0;168.0;180.0;192.0;204.0;216.0;228.0;240.0;252.0;264.0;276.0;288.0" calcMode="discrete" fill="freeze"/></rect></clipPath>
-  <text clip-path="url(#c4)" x="36" y="247" font-family="monospace" font-size="20" xml:space="preserve"><tspan fill="#3fb950">niklas@homelab:~$ </tspan><tspan fill="#e6edf3">uptime</tspan></text>
-  <clipPath id="c5"><rect x="36" y="261" width="0" height="34"><animate attributeName="width" begin="9.2s" dur="1.40s" values="0.0;12.0;24.0;36.0;48.0;60.0;72.0;84.0;96.0;108.0;120.0;132.0;144.0;156.0;168.0;180.0;192.0;204.0;216.0;228.0;240.0;252.0;264.0;276.0;288.0;300.0;312.0;324.0;336.0;348.0;360.0;372.0" calcMode="discrete" fill="freeze"/></rect></clipPath>
-  <text clip-path="url(#c5)" x="36" y="285" font-family="monospace" font-size="20" fill="#8b949e" font-weight="normal" xml:space="preserve">up since 2022 - still tinkering</text>
+  <g clip-path="url(#r)">
+    <rect width="1000" height="260" fill="url(#g)"/>
+    <path d="M0 190 C150 150 300 230 500 190 S850 150 1000 195 V260 H0 Z" fill="url(#w)"><animateTransform attributeName="transform" type="translate" values="0 0;-40 6;0 0" dur="9s" repeatCount="indefinite"/></path>
+    <path d="M0 215 C200 185 350 245 550 212 S850 190 1000 220 V260 H0 Z" fill="url(#w)" opacity="0.7"><animateTransform attributeName="transform" type="translate" values="0 0;30 -6;0 0" dur="11s" repeatCount="indefinite"/></path>
+    <circle cx="880" cy="60" r="90" fill="#ffffff" opacity="0.07"/>
+    <circle cx="940" cy="130" r="50" fill="#ffffff" opacity="0.06"/>
+  </g>
+  <text x="60" y="125" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="62" font-weight="700" fill="#ffffff">Hi, ich bin Niklas</text>
+  <text x="62" y="172" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#e0f7ff" opacity="0.92">Homelab  |  Automatisierung  |  Self-Hosting</text>
 </svg>
