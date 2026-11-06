@@ -24,23 +24,12 @@
 
 ---
 
-## 📊 GitHub-Statistik
+## 📊 GitHub
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Niklas970&show_icons=true&theme=tokyonight&hide_border=true&count_private=false" alt="GitHub Stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Niklas970&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Niklas970&theme=tokyonight&hide_border=true" alt="Streak" />
-
-</div>
-
----
-
-## 📈 Aktivität
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Niklas970&theme=tokyo-night&hide_border=true" alt="Contribution Graph" />
+![Followers](https://img.shields.io/github/followers/Niklas970?style=for-the-badge&logo=github&color=0ea5e9)
+![Last Commit](https://img.shields.io/github/last-commit/Niklas970/Feuerwehr-Master?style=for-the-badge&color=0ea5e9)
+![Stars](https://img.shields.io/github/stars/Niklas970/Feuerwehr-Master?style=for-the-badge&color=0ea5e9)
 
 </div>
